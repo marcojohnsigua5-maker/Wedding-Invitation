@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Andrei & April - Wedding Invitation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@600;700;900&family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ambient-bg"></div>
+    <canvas id="sparkle-canvas"></canvas>
+    <canvas id="petal-canvas"></canvas>
+
+    <!-- ROYAL ENVELOPE OVERLAY -->
+    <div id="envelope-overlay" onclick="openEnvelope()">
+        <div class="envelope-container">
+            <!-- 2 PICTURE FRAMES AT THE TOP OF ENVELOPE -->
+            <div class="envelope-photos">
+                <div class="photo-frame">
+                    <img src="groom.jpg" alt="Groom - John Andrei">
+                    <span>John Andrei</span>
+                </div>
+                <div class="photo-frame">
+                    <img src="bride.jpg" alt="Bride - April">
+                    <span>April</span>
+                </div>
+            </div>
+
+            <div class="envelope">
+                <div class="envelope-inner-border"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-pocket"></div>
+                <div class="envelope-seal">
+                    <div class="seal-inner">
+                        <span class="seal-initials">J&amp;A</span>
+                    </div>
+                </div>
+            </div>
+            <div class="click-hint">✦ Click the Wax Seal to Open ✦</div>
+        </div>
+    </div>
+
+    <!-- MAIN PAGE -->
+    <div id="main-page">
+        <div class="royal-card-wrapper">
+            <div class="royal-card">
+                
+                <div class="card-ornament c-top-left"></div>
+                <div class="card-ornament c-top-right"></div>
+                <div class="card-ornament c-bottom-left"></div>
+                <div class="card-ornament c-bottom-right"></div>
+
+                <!-- 10 PHOTO GALLERY -->
+                <div class="gallery-container">
+                    <button class="nav-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+                    
+                    <div class="slider-frame">
+                        <div class="slider-viewport">
+                            <div class="slide active">
+                                <img src="couple1.jpg" alt="Photo 1">
+                                <div class="slide-badge">01 / 10</div>
+                            </div>
+                            <div class="slide">
+                                <img src="couple2.jpg" alt="Photo 2">
+                                <div class="slide-badge">02 / 10</div>
+                            </div>
+                            <div class="slide">
+                                <img src="couple3.jpg" alt="Photo 3">
+                                <div class="slide-badge">03 / 10</div>
+                            </div>
+                            <div class="slide">
+                                <img src="couple4.jpg" alt="Photo 4">
+                                <div class="slide-badge">04 / 10</div>
+                            </div>
+                            <div class="slide">
+                                <img src="couple5.jpg" alt="Photo 5">
+                                <div class="slide-badge">05 / 10</div>
+                            </div>
+                            <div class="slide">
+                                <img src="couple6.jpg" alt="Photo 6">
+                                <div class="slide-badge">06 / 10</div>
+                            </div>
+                            <div class="slide">
+                                <img src="couple7.jpg" alt="Photo 7">
+                                <div class="slide-badge">07 / 10</div>
+                            </div>
+                            <div class="slide">
+                                <img src="couple8.jpg" alt="Photo 8">
+                                <div class="slide-badge">08 / 10</div>
+                            </div>
+                            <div class="slide">
+                                <img src="couple9.jpg" alt="Photo 9">
+                                <div class="slide-badge">09 / 10</div>
+                            </div>
+                            <div class="slide">
+                                <img src="couple10.jpg" alt="Photo 10">
+                                <div class="slide-badge">10 / 10</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="nav-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+
+                    <div class="dots-wrapper">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                        <span class="dot" onclick="goToSlide(3)"></span>
+                        <span class="dot" onclick="goToSlide(4)"></span>
+                        <span class="dot" onclick="goToSlide(5)"></span>
+                        <span class="dot" onclick="goToSlide(6)"></span>
+                        <span class="dot" onclick="goToSlide(7)"></span>
+                        <span class="dot" onclick="goToSlide(8)"></span>
+                        <span class="dot" onclick="goToSlide(9)"></span>
+                    </div>
+                </div>
+
+                <h1 class="names-title">John Andrei &amp; April</h1>
+
+                <div class="divider-emblem">
+                    <span>❦</span>
+                </div>
+
+                <p class="invitation-quote">
+                    "It would be our greatest honor and joy to celebrate our wedding and the start of our forever love with you."
+                </p>
+
+                <!-- WEDDING & RECEPTION DETAILS -->
+                <div class="info-card-box">
+                    <div class="info-row">
+                        <div class="info-header">✦ Date ✦</div>
+                        <div class="info-body">Friday, September 18, 2026</div>
+                        <div class="info-sub">Time: To Be Announced</div>
+                    </div>
+
+                    <div class="info-divider"></div>
+
+                    <div class="info-row">
+                        <div class="info-header">✦ Wedding Ceremony ✦</div>
+                        <div class="info-body">Distrito ng Santa Rosa</div>
+                        <div class="info-sub">Santa Rosa, Nueva Ecija</div>
+                    </div>
+
+                    <div class="info-divider"></div>
+
+                    <div class="info-row">
+                        <div class="info-header">✦ Reception ✦</div>
+                        <div class="info-body">Gloriah's Private Resort</div>
+                        <div class="info-sub">Sinasajan, Nueva Ecija</div>
+                    </div>
+
+                    <div class="info-divider"></div>
+
+                    <div class="info-row">
+                        <div class="info-header">✦ Dress Code ✦</div>
+                        <div class="info-body">Gentlemen: Black Top / Suit</div>
+                        <div class="info-sub">Formal / Semi-Formal Attire</div>
+                        <div class="info-body">Women: Dress</div>
+                        <div class="info-sub">Any Dress but color Beige</div>
+                    </div>
+                </div>
+
+                <div class="timer-title">✦ Countdown to Our Special Day ✦</div>
+                <div class="countdown-container">
+                    <div class="time-box">
+                        <div class="time-value" id="days">00</div>
+                        <div class="time-label">Days</div>
+                    </div>
+                    <div class="time-box">
+                        <div class="time-value" id="hours">00</div>
+                        <div class="time-label">Hours</div>
+                    </div>
+                    <div class="time-box">
+                        <div class="time-value" id="minutes">00</div>
+                        <div class="time-label">Minutes</div>
+                    </div>
+                    <div class="time-box">
+                        <div class="time-value" id="seconds">00</div>
+                        <div class="time-label">Seconds</div>
+                    </div>
+                </div>
+
+                <div class="footer-text">✦ Your Presence is Our Greatest Gift ✦</div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
